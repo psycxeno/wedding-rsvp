@@ -5,90 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wedding RSVP</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(to bottom right, #fff4e6, #fcebd4);
-      color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      min-height: 100vh;
-    }
-
-    .container {
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-      background: #ffffffcc;
-      border-radius: 16px;
-      padding: 30px 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 42px;
-      margin-bottom: 10px;
-      color: #b76e79;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 8px 5px;
-      font-size: 15px;
-      color: white;
-      background: #b76e79;
-      border: none;
-      border-radius: 24px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      width: auto;
-    }
-
-
-    .button:hover {
-      background: #9d5b65;
-    }
-
-    .button.secondary {
-      background: #6c9c85;
-    }
-    .button.secondary:hover {
-      background: #56806d;
-    }
-
-    .floral {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      width: 80px;
-      opacity: 0.2;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 32px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Είστε καλεσμένοι!</h1>
     <p>Είμαστε ιδιαίτερα χαρούμενοι που θα γιορτάσουμε το γάμο μας μαζί σας! Επιλέξτε παρακάτω για να δηλώσετε (ή όχι ☹) την παρουσία σας και για να λάβετε την τοποθεσία του πάρτυ!</p>
+
+    <!-- Countdown Timer -->
+    <div id="countdown" class="countdown"></div>
 
     <!-- RSVP Button -->
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSflaAqF5bZWMAiLAyt87sFyiTVx7rIyzDRJv4kdchEbrOaigw/viewform?usp=header" target="_blank" class="button">
@@ -100,8 +25,7 @@
       📍 Κτήμα Λιάκος
     </a>
   </div>
-
-  <!-- Optional Decorative Graphic -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Rose_icon.svg/2048px-Rose_icon.svg.png" alt="flower" class="floral" />
+  <!--<img src="images/rose.jpg" alt="Party Time" class="floral" />-->
+  <script src="js/countdown.js"></script>
 </body>
 </html>
