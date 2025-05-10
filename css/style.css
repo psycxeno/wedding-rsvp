@@ -2,8 +2,10 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: url('../images/rose.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../images/collage.jpg') no-repeat center center fixed;
+  background-size: contain;
+  background-color: #fff4e6; /* fallback for non-covered areas */
+  background-attachment: fixed;
   color: #333;
   display: flex;
   align-items: center;
@@ -11,6 +13,8 @@ body {
   padding: 20px;
   min-height: 100vh;
 }
+
+
 
 
 .container {
@@ -32,6 +36,7 @@ h1 {
 }
 
 p {
+  font-family: 'Courier PS Greek', cursive;
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -40,6 +45,7 @@ p {
   display: inline-block;
   padding: 10px 20px;
   margin: 8px 5px;
+  font-family: 'Courier PS Greek', cursive;
   font-size: 15px;
   color: white;
   background: #b76e79;
@@ -47,7 +53,7 @@ p {
   border-radius: 24px;
   text-decoration: none;
   transition: background 0.3s ease;
-  width: auto;
+  width: 100 px;
 }
 
 .button.secondary {
@@ -69,6 +75,7 @@ p {
 }
 
 .countdown {
+  font-family: 'Courier PS Greek', cursive;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
