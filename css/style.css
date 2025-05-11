@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: url('../images/collage.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../images/mobile_background.jpg') no-repeat center center fixed;
+  background-size: 414px 896px;
   color: #333;
   display: flex;
   align-items: center;
